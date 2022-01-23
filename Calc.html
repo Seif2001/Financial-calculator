@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calc.css" />
+    <script src="calc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Finanacial Calculator</title>
+  </head>
+  <body>
+    <h1>Calculate Your Rewards</h1>
+    <div class="in">
+      <form id="form1">
+        <label for="vend" class="label">Vendor/Bills</label>
+        <input type="number" id="vend" /><br />
+        <label for="ad" class="label">Media/Ads Spend</label>
+        <input type="number" id="ad" /><br />
+        <label for="corp" class="label">Corp. Spend</label>
+        <input type="number" id="corp" /><br />
+        <label for="project" class="label">Team Project</label>
+        <input type="number" id="project" />
+      </form>
+    </div>
+    <div class="out">
+      <h2>Compare Your Rewards</h2>
+      <div class="buttons">
+        <button type="button" onclick="brex()" id="brex">Brex</button>
+        <button type="button" onclick="stripe()" id="stripe">Stripe</button>
+        <button type="button" onclick="amex()" id="amex">Amex</button>
+      </div>
+      <div class="container">
+        <h3>Unlimited Rewards:</h3>
+
+        <div class="unlim-bar-progress" id="unlim-bar-progress">
+          <span id="unlim-rewards"></span><br />
+        </div>
+
+        <h3>Life Time Rewards:</h3>
+
+        <div class="lifetime-bar-progress" id="lifetime-bar-progress">
+          <span id="lifetime-rewards"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

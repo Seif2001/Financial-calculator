@@ -1,0 +1,111 @@
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(to bottom right, white, rgb(152, 152, 233));
+}
+label {
+  width: 150px;
+  margin: 10px;
+  display: inline-block;
+  padding: 1px 0 5px;
+  font-size: 20px;
+  text-align: right;
+}
+.in input {
+  width: 35%;
+  border: 2px solid purple;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#form1 {
+  max-width: 500px;
+  margin: auto;
+}
+.in {
+  padding: 20px;
+}
+
+.out h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.out .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+button {
+  width: 15%;
+  height: 30px;
+  box-shadow: 0 0 #888888;
+  font-size: 150%;
+  border: none;
+  background-color: rgb(247, 140, 47);
+  border-radius: 7px;
+  color: white;
+}
+button:hover {
+  background-color: chocolate;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+.out .displaying {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 60%;
+  margin: 20px auto;
+  margin-bottom: 200px;
+}
+
+.unlim-bar-progress,
+.lifetime-bar-progress {
+  background-color: rgb(247, 140, 47);
+  height: 25px;
+  border-radius: 8px;
+  position: relative;
+  visibility: hidden;
+}
+.unlim-bar-progress {
+  width: 35%;
+}
+.lifetime-bar-progress {
+  width: 75%;
+}
+.unlim-bar-progress span,
+.lifetime-bar-progress span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+.unlim-bar-progress:hover {
+  box-shadow: 3px 3px 8px 1px #888888;
+}
+.unlim-bar-progress:hover > span {
+  color: black;
+}
+.lifetime-bar-progress:hover {
+  box-shadow: 3px 3px 8px 1px #888888;
+}
+.lifetime-bar-progress:hover > span {
+  color: black;
+}
